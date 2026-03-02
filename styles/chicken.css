@@ -1,0 +1,48 @@
+body {
+    background-color: #F2F3F4;
+}
+
+h1,h2 {
+    color: #4B3FCF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid rgb(211, 206, 206);
+    max-width: 540px;
+    text-align: center;
+}
+
+ul li {
+    color: #4B3FCF;
+    max-width: 540px;
+}
+
+p, .Ingredients, ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    max-width: 540px;
+
+}
+p {
+    color: #C2185B;
+}
+
+.Ingredients li {
+    margin: 4px;
+    color: #C2185B;
+}
+
+.content {
+    max-width: 880px;
+    padding: 10px 0px 50px 20px;
+    margin: 0px auto;
+    border-left: 1px solid rgb(211, 206, 206);
+}
+
+a {
+    color: #6e11b0;
+}
+
+img {
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 160, 160);
+}

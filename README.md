@@ -23,6 +23,9 @@ The goal of this project is to practice basic HTML structure and relative linkin
 - Relative file paths
 - Folder structure organization
 - Git and GitHub workflow
+- CSS basic styling
+- Block and Inline
+- Box Model
 
 ## Live Demo
 [View Live Site](https://maqboolwebdev-stack.github.io/odin-recipes/)
