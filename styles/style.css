@@ -1,5 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F2F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 h1 {
@@ -12,8 +23,17 @@ ul li{
     color: #C2185B;
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px;
+    list-style: none;
+    border-bottom: 1px dotted #4B3FCF;
 }
 
 a {
     color: #c2185B;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
