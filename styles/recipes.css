@@ -1,3 +1,5 @@
+/* CSS RESET Boilerplate */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -28,6 +30,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 p {
@@ -41,54 +44,63 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* <<<<<<<<<<<<>>>>>>>>>>>>>> */
+
 body {
     background-color: #F2F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
 }
 
 h1,h2 {
     color: #4B3FCF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 1px solid rgb(211, 206, 206);
-    max-width: 540px;
+    max-width: 80vw;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
+    font-size: clamp(1rem, 8vw, 2rem);
 }
 
 ul li {
     color: #4B3FCF;
-    max-width: 540px;
+    max-width: 80vw;
 }
 
 p, .Ingredients, ul li {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    max-width: 540px;
-
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    max-width: 90vw;
 }
 p {
     color: #C2185B;
-    margin: 20px 0px 20px;
+    margin: 1.25rem 0rem 1.25rem;
 }
 
 .Ingredients li {
-    margin: 4px;
+    margin: 0.25rem;
     color: #C2185B;
 }
 
 .content {
-    max-width: 880px;
-    padding: 10px 0px 50px 20px;
-    margin: 0px auto;
+    max-width: 80vh;
+    padding: calc(1.25rem + 2vh);
+    margin: 1rem;
     border-left: 1px solid rgb(211, 206, 206);
 }
 
 a {
     color: #6e11b0;
+    font-size: 0.875rem;
+    text-underline-offset: 4px;
 }
 
 img {
-    height: 400px;
-    border-radius: 5px;
+    max-height: 80vh;
+    border-radius: 0.3rem;
     border: 1px solid rgb(219, 160, 160);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }

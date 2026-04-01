@@ -1,3 +1,5 @@
+/* CSS RESET Boilerplate */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -41,6 +43,8 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* <<<<<<<<<<<<>>>>>>>>>>>>>>>>>> */
+
 body {
     background-color: #F2F3F4;
     display: flex;
@@ -59,7 +63,7 @@ h1 {
 ul li{
     color: #C2185B;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 15px;
+    margin: 1rem;
     list-style: none;
     border-bottom: 1px dotted #4B3FCF;
 }
@@ -71,6 +75,6 @@ a {
 
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
 }
