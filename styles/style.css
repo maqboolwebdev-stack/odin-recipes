@@ -1,3 +1,17 @@
+:root {
+  --body-bg: #F2F3F4;
+  --container-bg: #fff;
+  --primary-clr: #4B3FCF;
+  --secondary-clr: #C2185B;
+  --hover-clr: #e91368;
+  --visited-clr: purple;
+  --transition: all 0.30s ease;
+  --font-size-lrg: clamp(1.5rem, 5vw, 2.5rem);
+  --font-size-sml: clamp(.8rem, 3vw, 1.2rem);
+  --border-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  --border-radius: .5rem;
+}
+
 /* CSS RESET Boilerplate */
 
 *, *::before, *::after {
@@ -46,36 +60,61 @@ h1, h2, h3, h4, h5, h6 {
 /* <<<<<<<<<<<<>>>>>>>>>>>>>>>>>> */
 
 body {
-  background-color: #F2F3F4;
+  background-color: var(--body-bg);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
-  color: #4B3FCF;
+  color: var(--primary-clr);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: var(--font-size-lrg);
 
 }
 
-ul li{
-    color: #C2185B;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 1rem;
-    list-style: none;
-    border-bottom: 1px dotted #4B3FCF;
+ul {
+  padding: 0;
+}
+
+li{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem 0;
+  list-style: none;
+  transition: var(--transition);
 }
 
 a {
-    color: #c2185B;
-    text-decoration: none;
+  color: var(--secondary-clr);
+  font-size: var(--font-size-sml);
+  text-underline-offset: .5rem;
+  text-decoration-style: dotted;
 }
 
+a:hover {
+  text-decoration: none;
+  color: var(--hover-clr);
+}
+
+a:active {
+  color: #fa14fa;
+}
+
+
 .container {
-    background-color: #fff;
-    padding: 1.25rem;
-    border-radius: 0.5rem;
+  border: 1px solid var(--primary-clr);
+  padding: max(1.5vw, 1rem);
+  text-align: center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  box-shadow: var(--border-shadow);
+}
+
+.container:hover {
+  background-color: var(--container-bg);
+  border: none;
+  transform: scale(1.1);
+  box-shadow: none;
 }
