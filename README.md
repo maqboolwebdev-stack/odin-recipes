@@ -27,5 +27,11 @@ The goal of this project is to practice basic HTML structure and relative linkin
 - Block and Inline
 - Box Model
 
+## Home Page
+![Preview](/images/22.jpeg)
+
+## First recipe
+![Preview](/images/11.jpeg)
+
 ## Live Demo
 [View Live Site](https://maqboolwebdev-stack.github.io/odin-recipes/)
